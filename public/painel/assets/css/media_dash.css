@@ -1,0 +1,35 @@
+@media screen and (max-width: 768px){
+
+    .main-painel .flex{
+        flex-direction: column;
+    }
+
+    .w33{
+        width: 100%;
+    }
+
+    .w50{
+        width: 100%;
+    }
+
+    .dashboard_container{
+        display: block;
+    }
+
+    aside.sidebar{
+        display: none;
+        width: 0px;
+        padding: 0px;
+        position: fixed;
+    }
+
+    aside.sidebar .perfil .close_menu{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main.main-painel div.scrollbar{
+        padding: 0;
+    }
+}

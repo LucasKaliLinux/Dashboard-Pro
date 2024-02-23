@@ -1,0 +1,37 @@
+@media screen and (max-width: 768px){
+    .flex{
+        flex-direction: column;
+    }
+
+    .w50{
+        width: 100%;
+    }
+
+    .w33{
+        width: 100%;
+    }
+
+    .container{
+        max-width: 380px;
+    }
+
+    header .container{
+        max-width: 1180px;
+    }
+
+    header .flex{
+        flex-direction: row;
+    }
+
+    header nav.desktop{
+        display: none;
+    }
+
+    header nav.mobile{
+        display: block;
+    }
+
+    section.biografia .bioImg{
+        width: 100%;
+    }
+}

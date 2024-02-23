@@ -1,0 +1,54 @@
+html,body{
+    background-color: rgb(200,200,200);
+}
+
+.center{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box{
+    width: 85%;
+    max-width: 500px;
+    background-color: white;
+    transition: .5s;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+.box form > input{
+    width: 100%;
+    height: 48px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    
+    font-size: 18px;
+}
+
+.box form input[type=text],
+.box form input[type=password]{
+    padding-left: 8px;
+}
+
+.box form input[type=submit]{
+    width: 180px;
+    height: 38px;
+    cursor: pointer;
+    background-color: #3e3a7c;
+    color: white;
+}
+
+.lembrar_me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lembrar_me label{
+    font-size: 18px;
+    margin: 8px;
+}

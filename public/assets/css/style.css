@@ -1,0 +1,245 @@
+.container{
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.w33{
+    width: 33.3%;
+}
+
+.w50{
+    width: 50%;
+}
+
+input.input_error{
+    outline: none;
+    border-color: red !important;
+}
+
+header{
+    background-color: #3e3a7c;
+    padding: 15px 0;
+}
+
+header .flex{
+    align-items: center;
+}
+
+header .logo a{
+    color: white;
+    font-weight: lighter;
+}
+
+header nav ul li a{
+    color: white;
+    text-transform: uppercase;
+}
+
+header nav.desktop ul li{
+    display: inline-block;
+    margin-left: 65px;
+}
+
+header nav.mobile{
+    display: none;
+}
+
+header nav.mobile h2{
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+header nav.mobile ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    z-index: 3;
+
+    transition: height .5s ease;
+    overflow-y: hidden;
+}
+
+header nav.mobile ul:not(.active){
+    display: none;
+}
+
+header nav.mobile ul li{
+    padding: 15px 0;
+}
+
+section{
+    margin-bottom:50px;
+}
+
+section.contato .container{
+    max-width: 480px;
+    height: 82vh;
+    min-height: 446px;
+}
+
+section.contato .input-wrapper{
+    width: 100%;
+    margin-top: 20px;
+}
+
+section.contato .input-wrapper input,
+section.contato .input-wrapper textarea{
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    font-size: 16px;
+    border: 1px solid #313462;
+}
+
+section.contato .input-wrapper textarea{
+    height: 180px;
+    padding: 8px;
+    resize: none;
+}
+
+section.contato .input-wrapper input[type=submit]{
+    background-color: #313462;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+section.banner{
+    background-image: url('../img/bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 480px;
+    transition: 0.6s;
+    position: relative;
+}
+
+section.banner form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    max-width: 420px;
+    padding: 0 2%;
+
+    text-align: center;
+    color: white;
+}
+
+section.banner form h2{
+    font-weight: lighter;
+}
+
+section.banner form input{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: 0;
+}
+
+section.banner form input[type=email]{
+    margin: 25px 0;
+    padding-left: 15px;
+}
+
+section.banner form input[type=submit]{
+    cursor: pointer;
+    background-color: #00C59E;
+    color: white;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+section.biografia .flex{
+    align-items: center;
+    gap: 55px;
+}
+
+section.biografia .bio p{
+    margin-top: 30px;
+    text-align: justify;
+}
+
+section.biografia .bioImg{
+    width: 40%;
+}
+
+section.biografia .bioImg figure img{
+    width: 100%;
+}
+
+section.especialidades{
+    background-color: #E2E2E2;
+    padding: 45px 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+section.especialidades .title{
+    font-size: 30px;
+    color: #999;
+    margin-bottom: 40px;
+}
+
+section.especialidades .flex{
+    gap: 30px;
+}
+ 
+section.especialidades .card-single h1{
+    color: #404580;
+    font-size: 40px;
+}
+
+section.especialidades .card-single h2{
+    color: #5a5a5a;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+aside.extras{
+    padding: 30px 0;
+    background-color: #404580;
+    color: white;
+}
+
+aside.extras .flex{
+    gap: 50px;
+}
+
+aside.extras h2{
+    font-weight: lighter;
+}
+
+aside.extras .depoiments p{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+aside.extras .servicos ul{
+    list-style-type: disc;
+}
+
+aside.extras .servicos ul li{
+    margin-top: 40px;
+}
+
+footer{
+    background-color: #313462;
+    padding: 15px 0;
+    color: white;
+    text-align: center;
+}
