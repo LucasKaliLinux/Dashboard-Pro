@@ -48,7 +48,7 @@
         }
 
         private function panel(){
-            $this->routs = [
+            $pagesComum = [
                 "login"               => "loginController",
                 "loggout"             => "loggoutController",
                 "home"                => "homeController",
@@ -61,6 +61,12 @@
                 "addUser"             => "addUserController",
                 "editUser"            => "editUserController",
                 "editGeneral"         => "editGeneralController",
+                "registerCategories"  => "registerCategoriesController",
+                "registerNews"        => "registerNewsController",
+                "manageCategories"    => "manageCategoriesController",
+                "manageNews"          => "manageNewsController"
+            ];
+            $pagesPost = [
                 "submitAddUser"       => "submitAddUserController",
                 "submitEditUser"      => "submitEditUserController",
                 "submitRegister"      => "submitRegisterController",
@@ -70,6 +76,8 @@
                 "editService"         => "editServiceController",
                 "editSlide"           => "editSlideController"
             ];
+
+            $this->routs = array_merge($pagesComum, $pagesPost);
         
             $page = isset($_GET["pag"]) ? $_GET["pag"] : "home";
 

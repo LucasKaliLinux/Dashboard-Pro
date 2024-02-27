@@ -22,7 +22,11 @@
         <li><a href="?pag=listTestimonial">Lista Depoimentos</a></li>
         <li><a href="?pag=listService">Lista Serviços</a></li>
         <li><a href="?pag=listSlide">Lista Slides</a></li>
-        
+        <h2>Gestão de Noticias</h2>
+        <li><a href="?pag=registerCategories">Cadastrar Categorias</a></li>
+        <li><a href="?pag=manageCategories">Gerenciar Categorias</a></li>
+        <li><a href="?pag=registerNews">Cadastrar Noticias</a></li>
+        <li><a href="?pag=manageNews">Gerenciar Noticias</a></li>
         <?php if(Office::getPermission(OFFICE_ADMIN)): ?>
             <h2>Administração</h2>
             <li><a href="?pag=addUser">Adicionar Usuario</a></li>
