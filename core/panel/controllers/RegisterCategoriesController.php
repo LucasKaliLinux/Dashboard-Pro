@@ -2,11 +2,12 @@
 
     namespace panel\controllers;
 
-use classes\Database;
-use classes\Layout;
-use panel\classes\HandleValidation;
-use panel\classes\ValidateEmpty;
-use panel\classes\ValidatePost;
+    use classes\Database;
+    use classes\Layout;
+    use panel\classes\HandleValidation;
+    use panel\classes\ValidateEmpty;
+    use panel\classes\ValidatePost;
+use panel\classes\ValidateSlog;
 use panel\models\InsertRegister;
 
     class registerCategoriesController{
@@ -32,9 +33,10 @@ use panel\models\InsertRegister;
         private function post_categories(Database $db, string $tb_name){
             
             $insertValue     = new InsertRegister($db);
-            $handle          = new HandleValidation();
+            $handle          = new HandleValidation($db);
             $validationEmpty = new ValidateEmpty();
             $validationPost  = new ValidatePost();
+            $validationSlog  = new ValidateSlog();
 
             $handle->AddValidation($validationPost, ["categorie"]);
 
@@ -43,15 +45,14 @@ use panel\models\InsertRegister;
             }
 
             $name = $_POST["categorie"];
+            $name_slog = $insertValue->generateSlog($name);
 
             $handle->AddValidation($validationEmpty, [$name]);
+            $handle->AddValidation($validationSlog, ["tb_name"=>$tb_name, "slog"=>$name_slog]);
 
             if(!$handle->ValidationAll()){
-                $_SESSION["error"] = "Campos vazios não são permitidos";
                 return;
             }
-
-            $name_slog = $insertValue->generateSlog($name);
 
             $insertValue->insertRegister($tb_name, [$name, $name_slog]);
             $_SESSION["success"] = "Cadastro realizado com sucesso!";

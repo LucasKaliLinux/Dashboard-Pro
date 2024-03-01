@@ -9,6 +9,7 @@
             
             foreach($param as $key => $value){
                 if(empty(trim($value))){
+                    $_SESSION["error"] = "Campos vazios não são permitidos";
                     return false;
                 }
             }
