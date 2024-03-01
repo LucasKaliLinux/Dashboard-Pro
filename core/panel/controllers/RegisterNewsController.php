@@ -23,7 +23,8 @@
             $result = $sql["result"];
             
             $data = [
-                "categories"=>$result
+                "categories"  => $result,
+                "recoverPost" => [$this, "recoverPost"]
             ];
 
             if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -38,6 +39,14 @@
                 DIR_VIEW_PANEL."templates/mainFooter",
                 DIR_VIEW_PANEL."templates/footer",
             ],$data);
+        }
+
+        public function recoverPost(string $post): string{
+            if(isset($_POST[$post])){
+                return $_POST[$post];
+            }
+
+            return "";
         }
 
         private function post_news(Database $db, string $tb_name){

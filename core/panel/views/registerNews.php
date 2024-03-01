@@ -5,18 +5,24 @@
         <div class="box-form">
             <label for="categoria">Escolha a categoria dessa noticia:</label>
             <select name="categoria" id="categoria">
-                <?php foreach($categories as $key => $value): ?>
+                
+            <?php foreach($categories as $key => $value): ?>
+                <?php if($value["id"] == $recoverPost("categoria")): ?>
+                    <option selected value="<?= $value["id"] ?>"><?= $value["nome"] ?></option>
+                <?php else: ?>
                     <option value="<?= $value["id"] ?>"><?= $value["nome"] ?></option>
-                <?php endforeach; ?>
+                <?php endif; ?>
+            <?php endforeach; ?>
+
             </select>
         </div>
         <div class="box-form">
             <label for="titulo">Escolha o titulo:</label>
-            <input type="text" name="titulo" id="titulo">
+            <input type="text" name="titulo" id="titulo" value="<?= $recoverPost("titulo") ?>">
         </div>
         <div class="box-form">
             <label for="conteudo">Conteudo da noticia:</label>
-            <textarea name="conteudo" id="conteudo"></textarea>
+            <textarea name="conteudo" id="conteudo"><?= $recoverPost("conteudo"); ?></textarea>
         </div>
         <div class="box-form">
             <label for="upload">Capa da Noticia</label>
