@@ -6,11 +6,10 @@
     use classes\Layout;
     use panel\classes\HandleValidation;
     use panel\classes\Redirect;
-use panel\classes\UDimage;
-use panel\classes\ValidateDate;
+    use panel\classes\UDimage;
     use panel\classes\ValidateEmpty;
     use panel\classes\ValidatePost;
-use panel\classes\ValidateUpload;
+    use panel\classes\ValidateUpload;
 
     class EditSlideController{
         public function index(){
