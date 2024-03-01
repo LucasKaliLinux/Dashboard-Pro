@@ -35,23 +35,15 @@ use panel\models\InsertRegister;
 
             $name   = htmlspecialchars($_POST["nome"]);
             $img    = $_FILES["imagem"];
-            $search = [".jpg", ".jpeg", ".png"];
-            $subst = ["_slide.jpg", "_slide.jpeg", "_slide.png"];
 
             $handle->AddValidation($validationEmpty, [$name, $img["name"], $img["type"], $img["size"]]);
-
-            if(!$handle->ValidationAll()){
-                $_SESSION["error"] = "Por favor preenchar os campos corretamente!";
-                Redirect::redirectRouter("registerSlide");
-            }
-
             $handle->AddValidation($validationImg, ["img"=>$img]);
 
             if(!$handle->ValidationAll()){
                 Redirect::redirectRouter("registerSlide");
             }
 
-            $img["name"] = str_replace($search, $subst, $img["name"]);
+            $img["name"] = UDimage::generateImg($img["name"], "_slide");
 
             UDimage::uploadFile($img);
 

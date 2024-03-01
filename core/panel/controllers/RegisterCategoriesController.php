@@ -10,7 +10,7 @@
     use panel\classes\ValidateSlog;
     use panel\models\InsertRegister;
 
-    class registerCategoriesController{
+    class RegisterCategoriesController{
         public function index(){
             
             $db = new Database;
