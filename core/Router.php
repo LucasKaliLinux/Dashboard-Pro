@@ -74,7 +74,8 @@
                 "submitSlide"         => "submitSlideController",
                 "editTestimonial"     => "editTestimonialController",
                 "editService"         => "editServiceController",
-                "editSlide"           => "editSlideController"
+                "editSlide"           => "editSlideController",
+                "editCategories"      => "editCategoriesController"
             ];
 
             $this->routs = array_merge($pagesComum, $pagesPost);

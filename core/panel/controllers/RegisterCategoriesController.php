@@ -7,8 +7,8 @@
     use panel\classes\HandleValidation;
     use panel\classes\ValidateEmpty;
     use panel\classes\ValidatePost;
-use panel\classes\ValidateSlog;
-use panel\models\InsertRegister;
+    use panel\classes\ValidateSlog;
+    use panel\models\InsertRegister;
 
     class registerCategoriesController{
         public function index(){
