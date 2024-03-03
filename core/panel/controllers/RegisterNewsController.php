@@ -10,7 +10,8 @@
     use panel\classes\ValidateId;
     use panel\classes\ValidatePost;
     use panel\classes\ValidateSlog;
-    use panel\classes\ValidateUpload;
+use panel\classes\ValidateSlugAnd;
+use panel\classes\ValidateUpload;
     use panel\models\InsertRegister;
 
     class RegisterNewsController{
@@ -57,7 +58,7 @@
             $validationEmpty  = new ValidateEmpty();
             $validationId     = new ValidateId();
             $validationUpload = new ValidateUpload();
-            $validationSlug   = new ValidateSlog();
+            $validationSlug   = new ValidateSlugAnd();
 
             $handle->AddValidation($validationPost, ["categoria", "titulo", "conteudo", "enviar"]);
 
@@ -74,7 +75,7 @@
             $handle->AddValidation($validationEmpty, [$categorie_id, $title, $content, $img["name"], $img["type"], $img["size"]]);
             $handle->AddValidation($validationId, ["id"=>$categorie_id, "tb_name"=>"tb_site_categorias"]);
             $handle->AddValidation($validationUpload, ["img"=>$img]);
-            $handle->AddValidation($validationSlug, ["tb_name"=>$tb_name, "slog"=>$slug]);
+            $handle->AddValidation($validationSlug, ["tb_name"=>$tb_name, "slog"=>$slug, "column"=>"categoria_id", "param"=>$categorie_id]);
 
             if(!$handle->ValidationAll()){
                 return;

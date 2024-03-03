@@ -1,4 +1,4 @@
-# Painel de Controle v2.1.0
+# Painel de Controle v2.1.1
 
 O Painel de Controle é uma ferramenta desenvolvida para administrar e monitorar um site, fornecendo aos usuários autorizados a capacidade de gerenciar conteúdos, usuários e métricas relacionadas ao site.
 
@@ -39,6 +39,11 @@ Estou animado em anunciar uma atualização completa e do zero para o projeto! N
 Essas mudanças não apenas melhoram a estrutura do projeto, tornando-o mais fácil de entender e dar manutenção, mas também preparam o terreno para a implementação de emocionantes recursos no futuro. Estou comprometido em fornecer a melhor experiência possível e estou ansioso para compartilhar mais novidades em breve.
 
 ## Changelog
+
+### Versão 2.1.1
+- **Correção**
+  - Validando as categorias
+  - é possivel criar uma outra noticia com mesmo nome porem com categoria diferente!
 
 ### Versão 2.1.0
 - **Nova Funcionalidade**

@@ -1,6 +1,6 @@
 
-<section class="box-content tb listarDepoimentos">
-    <h2><i class="fa-solid fa-clipboard-list"></i> Lista de Depoimentos</h2>
+<section class="box-content tb listarNoticias">
+    <h2><i class="fa-solid fa-clipboard-list"></i> Gerenciar Noticias</h2>
     <div class="table-wrapper">
         <table>
             <thead>

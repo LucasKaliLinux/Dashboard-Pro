@@ -243,39 +243,6 @@ main.main-painel section.home .metricas_visitas_hoje{
     background-color: rgb(33, 99, 33);
 }
 
-main.main-painel section.tb table{
-    width: 100%;
-}
-
-main.main-painel section.tb table thead{
-    border-bottom: 1px solid #2F3D42;
-    background-color: rgb(0, 95, 95);
-    color: white;
-}
-
-main.main-painel section.tb table{
-    min-width: 500px;
-}
-
-main.main-painel section.tb table,
-main.main-painel section.tb th,
-main.main-painel section.tb td{
-    /* border-collapse: collapse; */
-    padding: 10px;
-    text-align: left;
-}
-
-main.main-painel section.tb th,
-main.main-painel section.tb td{
-    border: 1px solid #2F3D42;
-}
-
-main.main-painel section.tb td img{
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-}
-
 main.main-painel section .table-wrapper{
     overflow-x: auto;
 }
@@ -326,6 +293,39 @@ main.main-painel section form .box-form input[type=submit]{
     color: white;
 }
 
+main.main-painel section.tb table{
+    width: 100%;
+    min-width: 500px;
+}
+
+main.main-painel section.tb table thead{
+    border-bottom: 1px solid #2F3D42;
+    background-color: rgb(0, 95, 95);
+    color: white;
+}
+
+main.main-painel section.tb table,
+main.main-painel section.tb th,
+main.main-painel section.tb td{
+    /* border-collapse: collapse; */
+    padding: 10px;
+    text-align: left;
+}
+
+main.main-painel section.tb th,
+main.main-painel section.tb td{
+    border: 1px solid #2F3D42;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+main.main-painel section.tb td img{
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
 main.main-painel section.tb .paginacao{
     text-align: center;
     margin-top: 15px;
@@ -345,22 +345,14 @@ main.main-painel section.tb .paginacao a.page-selected{
     background-color: rgb(220, 220, 220);
 }
 
-main.main-painel section tbody td:nth-child(5),
-main.main-painel section tbody td:nth-child(6){
-    width: 64px;
+main.main-painel section tbody td:last-child,
+main.main-painel section tbody td:nth-last-child(2){
+    width: 58px;
     text-align: center;
 }
 
-main.main-painel section.listarServicos tbody td:nth-child(4){
-    width: 64px;
+main.main-painel section tbody td:nth-last-child(3),
+main.main-painel section tbody td:nth-last-child(4){
+    width: 115px;
     text-align: center;
-}
-
-main.main-painel section.listarSlide tbody td:nth-child(2),
-main.main-painel section.listarSlide thead th:nth-child(2){
-    text-align: center;
-}
-
-main.main-painel section.listarDepoimentos table{
-    min-width: 625px;
 }

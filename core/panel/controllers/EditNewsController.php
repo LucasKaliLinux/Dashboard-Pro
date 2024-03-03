@@ -8,11 +8,12 @@
     use panel\classes\Redirect;
     use panel\classes\UDimage;
     use panel\classes\ValidateEmpty;
-use panel\classes\ValidateId;
-use panel\classes\ValidatePost;
-use panel\classes\ValidateSlog;
+    use panel\classes\ValidateId;
+    use panel\classes\ValidatePost;
+    use panel\classes\ValidateSlog;
+use panel\classes\ValidateSlugAnd;
 use panel\classes\ValidateUpload;
-use panel\models\InsertRegister;
+    use panel\models\InsertRegister;
 
     class EditNewsController{
         public function index(){
@@ -66,8 +67,8 @@ use panel\models\InsertRegister;
             $validationPost  = new ValidatePost;
             $validationEmpty = new ValidateEmpty;
             $validationFile  = new ValidateUpload;
-            $validationSlug  = new ValidateSlog;
-            $validationId    = new ValidateId();
+            $validationSlug  = new ValidateSlugAnd;
+            $validationId    = new ValidateId;
             $insertValues    = new InsertRegister($db);
             $handle          = new HandleValidation($db);
 
@@ -90,7 +91,7 @@ use panel\models\InsertRegister;
             $handle->AddValidation($validationId, ["id"=>$categorie_id, "tb_name"=>"tb_site_categorias"]);
 
             if($result["slog"] != $slug){
-                $handle->AddValidation($validationSlug, ["tb_name"=>$tb_name, "slog"=>$slug]);
+                $handle->AddValidation($validationSlug, ["tb_name"=>$tb_name, "slog"=>$slug, "column"=>"categoria_id", "param"=>$categorie_id]);
             }
 
             if(!$handle->ValidationAll()){
