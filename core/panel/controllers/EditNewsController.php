@@ -10,9 +10,8 @@
     use panel\classes\ValidateEmpty;
     use panel\classes\ValidateId;
     use panel\classes\ValidatePost;
-    use panel\classes\ValidateSlog;
-use panel\classes\ValidateSlugAnd;
-use panel\classes\ValidateUpload;
+    use panel\classes\ValidateSlugAnd;
+    use panel\classes\ValidateUpload;
     use panel\models\InsertRegister;
 
     class EditNewsController{

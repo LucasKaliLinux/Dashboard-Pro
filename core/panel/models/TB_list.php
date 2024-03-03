@@ -54,6 +54,15 @@
             }
         }
 
+        public function deleteNewsId($tb_name){
+            if(isset($_GET["delete"])){
+                if(is_numeric($_GET["delete"])){
+                    $this->db->delete("DELETE FROM `$tb_name` WHERE id = ?", [$_GET["delete"]]);
+                    $this->db->delete("DELETE FROM `tb_site_noticias` WHERE categoria_id = ?", [$_GET["delete"]]);
+                }
+            }
+        }
+
         private function pagination(): int{
             $getFilter = $this->filterGetPag();
             $numberPages = ($getFilter - 1) * $this->byPagination;

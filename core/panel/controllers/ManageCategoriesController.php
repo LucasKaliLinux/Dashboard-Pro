@@ -16,7 +16,7 @@
             $list = new TB_list($db, $byPag);
 
             $list->ordersId($tb_name);
-            $list->deleteId($tb_name);
+            $list->deleteNewsId($tb_name);
 
             $numberPagesShow = $list->getNumberPagesShow($tb_name);
             $currentPage     = $list->filterGetPag();
