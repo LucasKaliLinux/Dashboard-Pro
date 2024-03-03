@@ -48,6 +48,7 @@ Essas mudanças não apenas melhoram a estrutura do projeto, tornando-o mais fá
   - Seção Listar Categorias e Noticias
   - Seção Editar Categorias e Noticias
   - Tabela de Noticias/categorias
+  - Aba de noticias no site
 
 ### Versão 2.0.0
 - **Mudanças no Codigo**
