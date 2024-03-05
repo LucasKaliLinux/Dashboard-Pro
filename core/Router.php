@@ -27,6 +27,7 @@
             $this->routs = [
                 "home"          => "homeController",
                 "contact"       => "contactController",
+                "news"          => "newsController",
                 "submitHome"    => "submitHomeController",
                 "submitContact" => "submitContactController"
             ];

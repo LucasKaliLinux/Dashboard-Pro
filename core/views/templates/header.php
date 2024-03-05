@@ -6,7 +6,7 @@
     <meta name="author" content="Lucas Santos da Anunciação">
     <meta name="description" content="Website de informações, painel de controle com alteração no site dinamicamente!">
     
-    <title><?= $title ?></title>
+    <title>Website</title>
     
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -26,6 +26,7 @@
                 <li><a href="?pag=home">Home</a></li>
                 <li><a targetId="#sobre" href="#">Sobre</a></li>
                 <li><a targetId="#servicos" href="#">Servicos</a></li>
+                <li><a href="?pag=news">Notiçias</a></li>
                 <li><a href="?pag=contact">Contato</a></li>
             </ul>
         </nav>
@@ -35,6 +36,7 @@
                 <li><a href="?pag=home">Home</a></li>
                 <li><a targetId="#sobre" href="#">Sobre</a></li>
                 <li><a targetId="#servicos" href="#">Servicos</a></li>
+                <li><a href="?pag=news">Notiçias</a></li>
                 <li><a href="?pag=contact">Contato</a></li>
             </ul>
         </nav>

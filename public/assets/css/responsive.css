@@ -15,6 +15,10 @@
         max-width: 380px;
     }
 
+    section.noticias .container{
+        max-width: 684px;
+    }
+
     header .container{
         max-width: 1180px;
     }
@@ -32,6 +36,14 @@
     }
 
     section.biografia .bioImg{
+        width: 100%;
+    }
+
+    section.noticias div.opcoes{
+        width: 100%;
+    }
+    
+    section.noticias div.posts{
         width: 100%;
     }
 }
