@@ -22,7 +22,7 @@
         </div>
         <div class="box-form">
             <label for="conteudo">Conteudo da noticia:</label>
-            <textarea name="conteudo" id="conteudo"><?= $recoverPost("conteudo"); ?></textarea>
+            <textarea class="tinymce_area" name="conteudo" id="conteudo"><?= $recoverPost("conteudo"); ?></textarea>
         </div>
         <div class="box-form">
             <label for="upload">Capa da Noticia</label>

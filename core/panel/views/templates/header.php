@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/css/media_dash.css">
 
     <script src="https://kit.fontawesome.com/3c64ef68a2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tiny.cloud/1/303sg1gdhyehcali7ncf0718wmswdx7xmb8y1qbyd1yc20rr/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>tinymce.init({selector:'.tinymce_area'});</script>
 </head>
 <body>
 
