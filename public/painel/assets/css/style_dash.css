@@ -131,6 +131,7 @@ aside.sidebar .items-menu .menuClicked a::before{
 }
 
 main.main-dashboard{
+    width: 950px;
     flex: 1;
 }
 

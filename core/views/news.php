@@ -43,7 +43,7 @@
             <div class="box_post_single">
                 <div class="limit_title"><h3>19/09/2008 - Conheça os eleitos para ganhar um premio inovador estamos testando para saber o comportamento do titulo</h3></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem odio autem, perspiciatis accusantium architecto doloribus ipsam officiis voluptas, assumenda fugiat, aliquam dolor aspernatur ad distinctio. Voluptates ipsum odit illum modi corrupti illo officiis sed eligendi repellendus, natus eum expedita officia veniam tempora fugit? Quae minus possimus labore suscipit explicabo ad, deserunt eos. Magni similique exercitationem alias modi aliquam. Magni dolorum tempora in similique labore laudantium incidunt. Laudantium molestias sequi pariatur corrupti omnis fugiat earum tempore ea, obcaecati esse iusto rem, mollitia fugit. Cumque dolorem corrupti quo incidunt perferendis blanditiis, nostrum mollitia, quasi, odio placeat officiis quidem ad. Atque, a qui!</p>
-                <div class="btn"><a href="#">Leia mais</a></div>
+                <div class="btn"><a href="?pag=newsSingle&news=teste-post">Leia mais</a></div>
             </div>
             <?php endfor; ?>
             <div class="paginacao">

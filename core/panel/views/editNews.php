@@ -29,7 +29,7 @@
             <input type="file" name="imagem" id="upload">
         </div>
         <div class="box-form">
-            <input type="submit" name="enviar" value="Criar">
+            <input type="submit" name="enviar" value="Atualizar">
         </div>
     </form>
 </section>

@@ -28,6 +28,7 @@
                 "home"          => "homeController",
                 "contact"       => "contactController",
                 "news"          => "newsController",
+                "newsSingle"    => "newsSingleController",
                 "submitHome"    => "submitHomeController",
                 "submitContact" => "submitContactController"
             ];

@@ -66,6 +66,7 @@ use panel\classes\ValidateUpload;
                 return;
             }
 
+            $dateAction   = date("Y-m-d");
             $categorie_id = htmlspecialchars($_POST["categoria"]);
             $title        = htmlspecialchars($_POST["titulo"]);
             $content      = htmlspecialchars($_POST["conteudo"]);
@@ -86,7 +87,7 @@ use panel\classes\ValidateUpload;
 
             UDimage::uploadFile($img);
 
-            $insertValues->insertRegister($tb_name, [$categorie_id, $title, $content, $img["name"], $slug]);
-            $_SESSION["success"] = "Tudo certo irmão";
+            $insertValues->insertRegister($tb_name, [$categorie_id, $dateAction, $title, $content, $img["name"], $slug]);
+            $_SESSION["success"] = "Noticia cadastrada com sucesso!";
         }
     }
