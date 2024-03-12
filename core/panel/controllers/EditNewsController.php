@@ -79,7 +79,7 @@
 
             $categorie_id = htmlspecialchars($_POST["categoria"]);
             $title        = htmlspecialchars($_POST["titulo"]);
-            $content      = htmlspecialchars($_POST["conteudo"]);
+            $content      = $_POST["conteudo"];
             $slug         = $insertValues->generateSlog($title);
             $imagem       = $_FILES["imagem"];
             

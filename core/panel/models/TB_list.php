@@ -36,6 +36,14 @@
             return $select["result"];
         }
 
+        public function getResultsWhereCategoria(string $tb_name, $categorie): array{
+            $numberPages = $this->pagination();
+            
+            $select = $this->db->select("SELECT * FROM `$tb_name` WHERE categoria_id = ? ORDER BY order_id ASC LIMIT $numberPages, ".$this->byPagination, [$categorie]);
+            
+            return $select["result"];
+        }
+
         public function filterGetPag(): int{
             if(isset($_GET["pages"])){
                 if(is_numeric($_GET["pages"]) && $_GET["pages"] !== "0"){

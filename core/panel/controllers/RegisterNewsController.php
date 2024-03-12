@@ -69,7 +69,7 @@ use panel\classes\ValidateUpload;
             $dateAction   = date("Y-m-d");
             $categorie_id = htmlspecialchars($_POST["categoria"]);
             $title        = htmlspecialchars($_POST["titulo"]);
-            $content      = htmlspecialchars($_POST["conteudo"]);
+            $content      = $_POST["conteudo"];
             $slug         = $insertValues->generateSlog($title);
             $img          = $_FILES["imagem"];
 

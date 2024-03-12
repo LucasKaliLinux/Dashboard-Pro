@@ -9,5 +9,6 @@
     <script src="assets/js/alertBox.js"></script>
     <script src="assets/js/helpTelefone.js"></script>
     <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/categoria.js"></script>
 </body>
 </html>
