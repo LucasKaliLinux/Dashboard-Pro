@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Lucas Santos da Anunciação">
     <meta name="description" content="Website de informações, painel de controle com alteração no site dinamicamente!">
+    <meta name="keywords" content="painel,noticias,noticia,panel,sistema web, Desenvolvimento, Web">
     
     <title>Website</title>
     
